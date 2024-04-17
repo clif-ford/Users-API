@@ -20,7 +20,7 @@ app.get('/', (req,res) => {
     res.send('User Homepage');
 });
 
-mongoose.connect('mongodb+srv://admin:123456ab@jobportalapi.z5oaba7.mongodb.net/Users?retryWrites=true&w=majority&appName=jobportalAPI')
+mongoose.connect('MONGODB URL')
 .then(() => {
     console.log('Connected to MogoDB')
     app.listen(PORT, () => console.log(`Server Running on port: http://localhost:${PORT}`))
